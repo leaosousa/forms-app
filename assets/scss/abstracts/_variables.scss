@@ -1,7 +1,7 @@
 /**
  * Viewport e Workspace
  **/
-$viewportWidthDesktop: 1400px;
+$viewportWidthDesktop: 1440px;
 $viewportWidthTablet: 992px;
 $viewportWidthMobile: 768px;
 $maxViewport: 1920px;
@@ -9,18 +9,21 @@ $maxViewport: 1920px;
 /**
  * Colors *
  **/
-$primaryColor: #000000;
-$secondaryColor: #000000;
-$tertiaryColor: #000000;
-
+$primaryColor: #005f6b;
+$secondaryColor: #00b4cc;
 $blackColor: #000000;
 $whiteColor: #ffffff;
+$textColor: #343838;
+
+$succesColor: #28a745;
+$warningColor: #ffc107;
+$errorColor: #dc3545;
 
 /**
  * Fonts *
  **/
-$primaryFont: 'Open Sans', sans-serif;
-$secondaryFont: 'Open Sans', sans-serif;
+$primaryFont: "Open Sans", sans-serif;
+$secondaryFont: "Open Sans", sans-serif;
 
 /**
  * Media Queries *
