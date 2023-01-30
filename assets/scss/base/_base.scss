@@ -1,0 +1,14 @@
+html {
+	box-sizing: border-box;
+	font-size: 62.5%;
+	scroll-behavior: smooth;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+body {
+	font-family: $primaryFont;
+	font-size: 1.6rem;
+	line-height: 1.5;
+}

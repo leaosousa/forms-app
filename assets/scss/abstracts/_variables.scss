@@ -1,0 +1,34 @@
+/**
+ * Viewport e Workspace
+ **/
+$viewportWidthDesktop: 1400px;
+$viewportWidthTablet: 992px;
+$viewportWidthMobile: 768px;
+$maxViewport: 1920px;
+
+/**
+ * Colors *
+ **/
+$primaryColor: #000000;
+$secondaryColor: #000000;
+$tertiaryColor: #000000;
+
+$blackColor: #000000;
+$whiteColor: #ffffff;
+
+/**
+ * Fonts *
+ **/
+$primaryFont: 'Open Sans', sans-serif;
+$secondaryFont: 'Open Sans', sans-serif;
+
+/**
+ * Media Queries *
+ **/
+$mediaQueries: (
+	"sm": 576px,
+	"md": 768px,
+	"lg": 992px,
+	"xl": 1200px,
+	"xxl": 1400px,
+) !default;
