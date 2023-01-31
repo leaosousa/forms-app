@@ -1,0 +1,41 @@
+.field {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+	margin: 1rem;
+
+	&--w- {
+		&100 {
+			grid-column: span 4;
+		}
+		&75 {
+			grid-column: span 3;
+		}
+		&50 {
+			grid-column: span 2;
+		}
+		&25 {
+			grid-column: span 1;
+		}
+	}
+
+	&__label {
+		color: $primaryColor;
+		font-size: 1.4rem;
+		font-weight: 500;
+	}
+
+	&__input {
+		background-color: $lightColor;
+		border-radius: 2.5px;
+		padding: 0.5rem 1rem;
+
+		.field--error & {
+			outline: 1px solid $errorColor;
+		}
+
+		&:focus {
+			outline: 2px solid $secondaryColor;
+		}
+	}
+}
