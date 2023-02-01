@@ -1,10 +1,9 @@
 <template>
-  <div class="field-container-tmp">
-    <FormColumn
-      v-for="(column, index) in columns"
+  <div>
+    <FormStep
+      v-for="(step, index) in steps"
       :key="index"
-      :class="'form__column--w-' + column.size"
-      :data="column.fields"
+      :data="step.columns"
       :form-id="formId"
     />
   </div>
@@ -48,13 +47,20 @@ const columns = [
     fields: fields,
   },
 ];
+const steps = [
+  {
+    title: 'Dados pessoais',
+    columns: columns,
+  },
+  {
+    title: 'Dados pessoais',
+    columns: columns,
+  },
+  {
+    title: 'Dados pessoais',
+    columns: columns,
+  },
+];
 </script>
 
-<style lang="scss" scoped>
-.field-container-tmp {
-  align-items: flex-start;
-  display: grid;
-  gap: 1.6rem;
-  grid-template-columns: repeat(4, 1fr);
-}
-</style>
+<style lang="scss" scoped></style>
