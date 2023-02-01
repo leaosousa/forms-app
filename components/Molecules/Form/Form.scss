@@ -1,0 +1,23 @@
+.form {
+	&__column {
+		align-items: flex-start;
+		display: grid;
+		gap: 1.6rem;
+		grid-template-columns: repeat(4, 1fr);
+
+		&--w- {
+			&100 {
+				grid-column: span 4;
+			}
+			&75 {
+				grid-column: span 3;
+			}
+			&50 {
+				grid-column: span 2;
+			}
+			&25 {
+				grid-column: span 1;
+			}
+		}
+	}
+}

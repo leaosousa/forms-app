@@ -1,11 +1,11 @@
 <template>
   <div class="field-container-tmp">
-    <FieldComponent
-      v-for="(field, index) in fields"
-      :id="formId + '-' + field.name"
+    <FormColumn
+      v-for="(column, index) in columns"
       :key="index"
-      :class="'field--w-' + field.size"
-      :data="field"
+      :class="'form__column--w-' + column.size"
+      :data="column.fields"
+      :form-id="formId"
     />
   </div>
 </template>
@@ -23,7 +23,7 @@ const fields = [
     disabled: false,
     readonly: false,
     value: '',
-    size: '50',
+    size: '100',
   },
   {
     type: 'email',
@@ -35,7 +35,17 @@ const fields = [
     disabled: false,
     readonly: false,
     value: '',
+    size: '100',
+  },
+];
+const columns = [
+  {
     size: '50',
+    fields: fields,
+  },
+  {
+    size: '25',
+    fields: fields,
   },
 ];
 </script>
